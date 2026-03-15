@@ -262,7 +262,27 @@ body {
     backdrop-filter: blur(10px);
     animation: fadeInUp 0.8s ease 0.2s both;
 }
+@media (max-width:768px){
 
+.hero-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-image img{
+    width:140px;
+    height:140px;
+}
+
+.hero-title{
+    font-size:2rem;
+}
+
+.hero-description{
+    max-width:100%;
+}
+
+}
 .status-indicator {
     width: 8px;
     height: 8px;
