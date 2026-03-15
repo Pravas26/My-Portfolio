@@ -1123,24 +1123,27 @@ body {
     background: var(--color-bg-secondary);
 }
 
-.footer-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer-content{
+    max-width:1400px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
 }
 
-.footer-text {
-    font-size: 0.95rem;
-    color: var(--color-text-muted);
+.footer-text{
+    text-align:center;
 }
 
 .footer-copyright {
     margin-top: 0.5rem;
     font-size: 0.85rem;
 }
-
+.footer-text p:first-child{
+    font-size:1.1rem;
+    margin-bottom:8px;
+}
 .footer-links {
     display: flex;
     gap: 1.5rem;
