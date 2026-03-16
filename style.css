@@ -1218,37 +1218,51 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .section {
-        padding: var(--spacing-lg) 1.5rem;
+@media (max-width:768px){
+
+    .nav-menu{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:rgba(10,14,26,0.98);
+        backdrop-filter:blur(10px);
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:20px 0;
+        transform:translateY(-120%);
+        opacity:0;
+        transition:all 0.3s ease;
     }
-    
-    .nav-menu {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: rgba(10, 14, 26, 0.98);
-        backdrop-filter: blur(10px);
-        flex-direction: column;
-        gap: 0;
-        padding: 2rem;
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: all var(--transition-normal);
-        border-bottom: 1px solid var(--glass-border);
+
+    .nav-menu.active{
+        transform:translateY(0);
+        opacity:1;
     }
-    
-    .nav-menu.active {
-        transform: translateY(0);
-        opacity: 1;
-    }
+
+
     
     .nav-menu li {
         padding: 1rem 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
-    
+    .navbar{
+    padding:0.8rem 0;
+    }
+
+    .nav-logo{
+        font-size:1.2rem;
+    }
+
+    .logo-bracket{
+        font-size:1.5rem;
+    }
+
+    .nav-toggle span{
+        width:22px;
+        height:2px;
+    }
     .nav-toggle {
         display: flex;
     }
